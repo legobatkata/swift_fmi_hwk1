@@ -13,7 +13,7 @@ struct Book: Decodable {
     let chapters: [Chapter]?
 }
 
-struct Chapter: Decodable {
+struct Chapter: Decodable, Hashable {
     let id: String?
     let type: String?
     let title: String?
@@ -21,7 +21,7 @@ struct Chapter: Decodable {
     let actions: [Action]?
 }
 
-struct Action: Decodable {
+struct Action: Decodable, Hashable {
     let description: String?
     let next: String?
 }

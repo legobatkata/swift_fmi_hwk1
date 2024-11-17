@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F03981912CE5271E00C052AA /* ActionSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03981902CE5271E00C052AA /* ActionSelectView.swift */; };
 		F06B11762CE1151E000B2D1D /* SwiftFMI_hwk1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B11752CE1151E000B2D1D /* SwiftFMI_hwk1App.swift */; };
-		F06B11782CE1151E000B2D1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B11772CE1151E000B2D1D /* ContentView.swift */; };
+		F06B11782CE1151E000B2D1D /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B11772CE1151E000B2D1D /* StartScreenView.swift */; };
 		F06B117A2CE11520000B2D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06B11792CE11520000B2D1D /* Assets.xcassets */; };
 		F06B117D2CE11520000B2D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06B117C2CE11520000B2D1D /* Preview Assets.xcassets */; };
+		F06B11842CE11C0F000B2D1D /* game_script.json in Resources */ = {isa = PBXBuildFile; fileRef = F06B11832CE11C0E000B2D1D /* game_script.json */; };
+		F085D9722CE3DD98007A0448 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085D9712CE3DD98007A0448 /* DataModels.swift */; };
+		F085D9772CE3E4CB007A0448 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085D9762CE3E4CB007A0448 /* Utils.swift */; };
+		F085D97B2CE519C3007A0448 /* ChapterSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085D97A2CE519C3007A0448 /* ChapterSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F03981902CE5271E00C052AA /* ActionSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSelectView.swift; sourceTree = "<group>"; };
 		F06B11722CE1151E000B2D1D /* SwiftFMI_hwk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFMI_hwk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06B11752CE1151E000B2D1D /* SwiftFMI_hwk1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFMI_hwk1App.swift; sourceTree = "<group>"; };
-		F06B11772CE1151E000B2D1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F06B11772CE1151E000B2D1D /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
 		F06B11792CE11520000B2D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F06B117C2CE11520000B2D1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F06B11832CE11C0E000B2D1D /* game_script.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game_script.json; sourceTree = "<group>"; };
+		F085D9712CE3DD98007A0448 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		F085D9762CE3E4CB007A0448 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F085D9782CE3FDE3007A0448 /* MagicalNeverlandRegular-JpRZ7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MagicalNeverlandRegular-JpRZ7.ttf"; sourceTree = "<group>"; };
+		F085D9792CE3FED7007A0448 /* SwiftFMI-hwk1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftFMI-hwk1-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F085D97A2CE519C3007A0448 /* ChapterSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSelectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,13 @@
 		F06B11742CE1151E000B2D1D /* SwiftFMI_hwk1 */ = {
 			isa = PBXGroup;
 			children = (
+				F085D9792CE3FED7007A0448 /* SwiftFMI-hwk1-Info.plist */,
+				F085D9752CE3E4B6007A0448 /* Misc */,
+				F085D9732CE3DE9F007A0448 /* MainViews */,
+				F085D9742CE3DEC7007A0448 /* ViewComponents */,
 				F06B11752CE1151E000B2D1D /* SwiftFMI_hwk1App.swift */,
-				F06B11772CE1151E000B2D1D /* ContentView.swift */,
+				F085D9782CE3FDE3007A0448 /* MagicalNeverlandRegular-JpRZ7.ttf */,
+				F06B11832CE11C0E000B2D1D /* game_script.json */,
 				F06B11792CE11520000B2D1D /* Assets.xcassets */,
 				F06B117B2CE11520000B2D1D /* Preview Content */,
 			);
@@ -65,6 +82,32 @@
 				F06B117C2CE11520000B2D1D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F085D9732CE3DE9F007A0448 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				F06B11772CE1151E000B2D1D /* StartScreenView.swift */,
+				F085D97A2CE519C3007A0448 /* ChapterSelectView.swift */,
+				F03981902CE5271E00C052AA /* ActionSelectView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		F085D9742CE3DEC7007A0448 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		F085D9752CE3E4B6007A0448 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F085D9712CE3DD98007A0448 /* DataModels.swift */,
+				F085D9762CE3E4CB007A0448 /* Utils.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06B11842CE11C0F000B2D1D /* game_script.json in Resources */,
 				F06B117D2CE11520000B2D1D /* Preview Assets.xcassets in Resources */,
 				F06B117A2CE11520000B2D1D /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F06B11782CE1151E000B2D1D /* ContentView.swift in Sources */,
+				F085D9722CE3DD98007A0448 /* DataModels.swift in Sources */,
+				F06B11782CE1151E000B2D1D /* StartScreenView.swift in Sources */,
+				F03981912CE5271E00C052AA /* ActionSelectView.swift in Sources */,
 				F06B11762CE1151E000B2D1D /* SwiftFMI_hwk1App.swift in Sources */,
+				F085D9772CE3E4CB007A0448 /* Utils.swift in Sources */,
+				F085D97B2CE519C3007A0448 /* ChapterSelectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +323,13 @@
 				DEVELOPMENT_TEAM = 4T63XSEC5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftFMI-hwk1-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +354,13 @@
 				DEVELOPMENT_TEAM = 4T63XSEC5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftFMI-hwk1-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

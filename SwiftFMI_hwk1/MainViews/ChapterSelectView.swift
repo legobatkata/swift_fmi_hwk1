@@ -7,12 +7,55 @@
 
 import SwiftUI
 
-struct ChapterSelectView: View {
+struct ChapterRow: View {
+    @Binding var path: [NavView]
+    
+    let chapter: Chapter
+    init(chapter: Chapter, navPath: Binding<[NavView]>) {
+        self.chapter = chapter
+        self._path = navPath
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Section {
+            NavigationLink(value: NavView.singleChapter(chapter), label: {
+                VStack {
+                    HStack {
+                        Text(chapter.id ?? "")
+                                .bold()
+                                .font(.system(size: 14.0))
+                                .padding(5)
+                            Spacer()
+                    }
+                    HStack {
+                        Text(chapter.title ?? "")
+                            .bold()
+                            .font(.system(size: 20.0))
+                            .multilineTextAlignment(.leading)
+                            .padding(5)
+                        Spacer()
+                    }
+                }
+            })
+        }
     }
 }
 
-#Preview {
-    ChapterSelectView()
+struct ChapterSelectView: View {
+    @Binding var path: [NavView]
+    
+    let chapterArray: [Chapter]
+    init(chapterArray: [Chapter], navPath: Binding<[NavView]>) {
+        self.chapterArray = chapterArray
+        self._path = navPath
+    }
+    var body: some View {
+        List {
+            ForEach (chapterArray, id: \.self) { chapter in
+                if (chapter.actions != []) {
+                    ChapterRow(chapter: chapter, navPath: $path)
+                }
+            }
+        }
+        .navigationTitle("Chapters")
+    }
 }
